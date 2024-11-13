@@ -15,8 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia Clínica</title>
     <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
-  
-    
 </head>
 <body>
     <style>
@@ -33,43 +31,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* #myModal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-}
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
 #editor {
-           display: none; /* Ocultar el editor 
+           display: none; 
         }
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -251,11 +217,11 @@ section {
 }
 #medico {
     
-    margin-top: -70px;
+    margin-top: -100px;
     margin-left: 500px;
     width: 500px;
-    height: 20px;
-    /* visibility: hidden;*/
+    height: 40px;
+     visibility: hidden;
 }
 h2 {
   color: #fcfafa;
@@ -321,18 +287,18 @@ p{
     <header>
         <img src="/imagenes/medical.png" alt="Imagen de cabecera">   
     </header>
-<main>
-   
+<main>  
 <!----------------------------------- Datos del paciente --> 
-       <section id="datos-paciente"></section>
-       <h2>Datos del Paciente</h2>
+       <section id="datos-paciente">
+       <h2>Datos del Paciente</h2><br>
+       
        <% if (paciente) { %>                     
-            <p><strong>Nombre: </strong><%= paciente.nombre %></p>
-            <p><strong>DNI: </strong> <%= paciente.dni %></p>
+            <p><strong>Nombre: </strong><%= paciente.nombre %></p><br>
+            <p><strong>DNI: </strong> <%= paciente.dni %></p><br>
             <script>let dnipaciente = '<%= paciente.dni %>';</script>
-            <p><strong>Fecha de Nacimiento: </strong> <%= getTodayDate(paciente.nacimiento) %></p>
-            <p><strong>Sexo: </strong> <%= paciente.sexo %></p>
-            <p><strong>Celular: </strong> <%= paciente.telefono %></p>
+            <p><strong>Fecha de Nacimiento: </strong> <%= getTodayDate(paciente.nacimiento) %></p> <br>
+            <p><strong>Sexo: </strong> <%= paciente.sexo %></p><br>
+            <p><strong>Celular: </strong> <%= paciente.telefono %></p><br>
         </section>                   
     </form>
 <% }%>
