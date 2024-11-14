@@ -48,10 +48,10 @@
         /* Barra de menú */
         .menu {
             display: flex;
-            justify-content: center;
-            margin: 20px 0;
-            margin-top: -15px;
-            position: absolute;
+    justify-content: center;
+    margin: 20px 0;
+    position: absolute;
+    top: 20px; 
         }
 
         .menu button {
