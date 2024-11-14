@@ -55,6 +55,7 @@
         }
 
         .menu button {
+            margin-top:500px;
             padding: 10px 20px;
             margin: 60px 5px;
             border: none;
@@ -92,7 +93,7 @@
         .login-form {
             display: none; /* Oculto por defecto */
             background-color: white;
-            top:50px;
+            top:250px;
             width: 350px;
             margin: 20px auto;
             padding: 20px;
