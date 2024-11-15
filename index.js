@@ -19,6 +19,7 @@ const connection = mysql.createConnection({
   password: process.env.PASSWORD, // Cambia esto si tu MySQL tiene una contraseña
   database: process.env.DATABASE,
   port: process.env.PORT,
+  ssl: true
 });
 
 connection.connect((err) => {
