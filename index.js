@@ -39,7 +39,7 @@ let dniPaciente;
 let medi;
 
 // Ruta para validar el login
-app.post('/login', (req, res) => {
+app.post("/login", (req, res) => {
   const { username, password } = req.body;
   //console.log('Datos recibidos:', { username, password });
   let dniUsuario = username;
