@@ -18,7 +18,7 @@
             var password = document.getElementById('password').value;
 
            // Enviar datos al servidor
-    fetch('/fetch', {
+    fetch('/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
